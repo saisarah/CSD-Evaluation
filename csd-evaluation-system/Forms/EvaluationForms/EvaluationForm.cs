@@ -7,20 +7,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using csd_evaluation_system.Models;
 
-namespace csd_evaluation_system.Forms
+namespace csd_evaluation_system.Forms.EvaluationForms
 {
-    public partial class LoginForm : Form
+    public partial class EvaluationForm : Form
     {
-        public LoginForm()
+        public EvaluationForm()
         {
             InitializeComponent();
-        }
-
-        private void LoginForm_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

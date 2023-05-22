@@ -17,7 +17,7 @@ namespace csd_evaluation_system
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new LoginForm());
+            Application.Run(new LoadingScreen());
         }
     }
 }

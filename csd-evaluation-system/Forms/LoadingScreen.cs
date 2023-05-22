@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csd_evaluation_system.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -7,20 +8,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using csd_evaluation_system.Models;
 
 namespace csd_evaluation_system.Forms
 {
-    public partial class LoginForm : Form
+    public partial class LoadingScreen : Form
     {
-        public LoginForm()
+        public LoadingScreen()
         {
             InitializeComponent();
         }
 
-        private void LoginForm_Load(object sender, EventArgs e)
+        private void LoadingScreen_Load(object sender, EventArgs e)
         {
-
+            var Connection = Database.GetConnection();
+            Connection.Open();
+            Connection.Close();
         }
     }
 }
