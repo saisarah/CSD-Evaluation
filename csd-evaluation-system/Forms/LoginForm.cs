@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using csd_evaluation_system.Models;
 
 namespace csd_evaluation_system.Forms
 {
@@ -17,9 +18,11 @@ namespace csd_evaluation_system.Forms
             InitializeComponent();
         }
 
-        private void guna2Button1_Click(object sender, EventArgs e)
+        private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            var Connection = Database.GetConnection();
+            Connection.Open();
+            Connection.Close();
         }
     }
 }

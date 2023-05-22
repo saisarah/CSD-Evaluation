@@ -1,6 +1,6 @@
-﻿namespace csd_evaluation_system.Forms
+﻿namespace csd_evaluation_system.Forms.AdminForms
 {
-    partial class LoginForm
+    partial class AdminForm
     {
         /// <summary>
         /// Required designer variable.
@@ -30,20 +30,17 @@
         {
             this.SuspendLayout();
             // 
-            // LoginForm
+            // AdminForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(284, 261);
-            this.Name = "LoginForm";
-            this.Text = "Login";
-            this.Load += new System.EventHandler(this.LoginForm_Load);
+            this.ClientSize = new System.Drawing.Size(569, 341);
+            this.Name = "AdminForm";
+            this.Text = "AdminForm";
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
     }
 }
-
