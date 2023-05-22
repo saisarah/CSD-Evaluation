@@ -1,0 +1,6 @@
+bin/Debug/*
+bin/Release/*
+bin/x86/*
+bin/x64/*
+obj/*
+Resources/Thumbs.db
