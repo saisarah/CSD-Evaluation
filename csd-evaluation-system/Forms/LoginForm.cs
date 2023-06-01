@@ -11,7 +11,7 @@ using csd_evaluation_system.Models;
 
 namespace csd_evaluation_system.Forms
 {
-    public partial class LoginForm : Form
+    public partial class LoginForm : BaseForm
     {
         public LoginForm()
         {
@@ -20,7 +20,9 @@ namespace csd_evaluation_system.Forms
 
         private void LoginForm_Load(object sender, EventArgs e)
         {
-
+            userBindingSource.Add(new User() { username = "Lenard" });
+            userBindingSource.Add(new User() { username = "Sarah" });
+            userBindingSource.Add(new User() { username = "Grace" });
         }
     }
 }
