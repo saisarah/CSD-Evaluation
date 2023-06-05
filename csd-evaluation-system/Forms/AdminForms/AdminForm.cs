@@ -1,4 +1,5 @@
-﻿using System;
+﻿using csd_evaluation_system.Models;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,9 +11,9 @@ using System.Windows.Forms;
 
 namespace csd_evaluation_system.Forms.AdminForms
 {
-    public partial class AdminForm : Form
+    public partial class AdminForm : BaseForm
     {
-        public AdminForm()
+        public AdminForm(User user, LoginForm loginForm)
         {
             InitializeComponent();
         }

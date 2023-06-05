@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using csd_evaluation_system.Models;
 using csd_evaluation_system.Models.Exceptions;
+using csd_evaluation_system.Forms.AdminForms;
 
 namespace csd_evaluation_system.Forms
 {
@@ -25,6 +26,9 @@ namespace csd_evaluation_system.Forms
             this.guna2TextBoxUsername.AutoCompleteCustomSource.AddRange(
                 users.Select(user => user.username).ToArray<string>()
             );
+
+            this.Hide();
+            new AdminForm(users.First(), this).Show();
         }
 
         private void buttonLogin_Click(object sender, EventArgs e)
@@ -38,9 +42,18 @@ namespace csd_evaluation_system.Forms
                     alert("Login Failed", "Wrong password!");
                     return;
                 }
+
+                this.Hide();
+                new AdminForm(user, this).Show();
             }
-            catch (NotFoundException ex) { alert("Login Failed", "Wrong username"); }
-            catch (Exception ex) { alert("An error occured", ex.Message); }
+            catch (NotFoundException ex) { 
+                alert("Login Failed", "Wrong username");
+                Console.WriteLine(ex.ToString());
+            }
+            catch (Exception ex) { 
+                alert("An error occured", ex.Message);
+                Console.WriteLine(ex.ToString());
+            }
         }
 
 

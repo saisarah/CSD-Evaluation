@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace csd_evaluation_system.Models
 {
-    abstract class BaseModel : Database
+    public abstract class BaseModel : Database
     {
         abstract protected string[] columns { get; }
 

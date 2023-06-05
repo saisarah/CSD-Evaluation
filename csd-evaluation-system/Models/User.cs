@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csd_evaluation_system.Models
 {
-    class User : BaseModel
+    public class User : BaseModel
     {
 
         protected override string[] columns { get{

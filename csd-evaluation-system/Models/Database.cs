@@ -7,7 +7,7 @@ using System.Data.OleDb;
 
 namespace csd_evaluation_system.Models
 {
-    class Database
+    public class Database
     {
         public static OleDbConnection GetConnection()
         {

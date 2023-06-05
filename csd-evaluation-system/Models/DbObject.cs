@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace csd_evaluation_system.Models
 {
-    class DbObject : Dictionary<string, object>
+    public class DbObject : Dictionary<string, object>
     {
         public DbObject Push(string key, object value)
         {
