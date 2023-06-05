@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,14 @@ namespace csd_evaluation_system
         public BaseForm()
         {
             this.StartPosition = FormStartPosition.CenterParent;
-            this.TopMost = true;
-            this.Font = new System.Drawing.Font("Segoe UI", 16);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.BackColor = Color.FromArgb(248, 250, 252);
+            this.Font = new Font("Segoe UI", 14, GraphicsUnit.Pixel);
+        }
+
+        public void alert(string title, string message)
+        {
+            MessageBox.Show(message, title);
         }
     }
 }

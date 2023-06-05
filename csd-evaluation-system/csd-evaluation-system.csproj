@@ -77,7 +77,10 @@
     <Compile Include="Forms\LoginForm.Designer.cs">
       <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Models\BaseModel.cs" />
     <Compile Include="Models\Database.cs" />
+    <Compile Include="Models\DbObject.cs" />
+    <Compile Include="Models\Exceptions\NotFoundException.cs" />
     <Compile Include="Models\Student.cs" />
     <Compile Include="Models\User.cs" />
     <Compile Include="Program.cs" />
